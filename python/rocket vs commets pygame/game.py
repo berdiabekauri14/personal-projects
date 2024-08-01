@@ -20,7 +20,7 @@ background_image = pygame.transform.scale(background_image, (window_width, windo
 game_over_background = pygame.image.load("python/rocket vs commets pygame/game_over.png").convert()
 commet_image = pygame.image.load("python/rocket vs commets pygame/commets.png").convert_alpha()
 commet_image = pygame.transform.scale(commet_image, (200, 100))
-player_image = pygame.image.load("python/rocket vs commets py game/rocket.png").convert_alpha()
+player_image = pygame.image.load("python/rocket vs commets pygame/rocket.png").convert_alpha()
 player_image = pygame.transform.scale(player_image, (150, 150))
 
 game_over_screen = pygame.Surface((window_width, window_height))
