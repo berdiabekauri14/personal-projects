@@ -1,0 +1,20 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #333;
+    transition: all 0.4 ease;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
