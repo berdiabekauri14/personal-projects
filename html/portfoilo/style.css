@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    animation: animate 1s;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+p, li {
+    font-weight: bold;
+}
+
+header, footer {
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+}
+
+#button {
+    background-color: white;
+    color: blue;
+    width: 100px;
+    height: 40px;
+    border-radius: 0px;
+    border: 2px solid white;
+    position: relative;
+    left: 585px;
+    bottom: 70px;
+    opacity: 100;
+    transition: 0.24s;
+    font-size: medium;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+}
+
+#a {
+    position: relative;
+    top: 10px;
+}
+
+#button:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.24s;
+    box-shadow: 0px 0px 20px white;
+}
+
+#button:active {
+    background-color: white;
+    color: blue;
+    transition: 0.24s;
+}
+
+#img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616);
+    animation: image-animate 1s;
+    position: relative;
+    right: 200px;
+    width: 500px;
+}
+
+@keyframes image-animate {
+    from {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateX(1px);
+    }
+}
+
+button {
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    transition: 0.24s;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.644);
+}
+
+button:hover { 
+    background: white;
+    color: blue;
+    transition: 0.24s;
+}
+
+button:active {
+    background-color: blue;
+    color: white;
+    transition: 0.24s;
+}
+
+a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.24s;
+    opacity: 100;
+    text-decoration-line: none;
+}
+
+a:hover {
+    transition: 0.24s;
+    text-decoration-line: underline;
+}
+
+a:not(:hover) {
+    opacity: 0.3;
+}
+
+a:active {
+    opacity: 50;
+    transition: 0.24s;
+}
+
+.a {
+    filter: drop-shadow(0px 0px 20px black);
+    opacity: 100;
+}
+
+.a:not(:hover) {
+    opacity: 0.3;
+}
+
+.icons {
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.685));
+    position: relative;
+    bottom: 50px;
+}
+
+.icons:hover {
+    transform: scale(100px);
+}
+
+.icons:not(:hover) {
+    transform: scale(50px);
+}
+
+#github {
+    filter: invert();
+    opacity: 100;
+}
+
+#h1 {
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+    position: relative;
+    animation: h1-animate 1s;
+}
+
+@keyframes h1-animate {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(1px);
+    }
+}
+
+#h2 {
+    text-shadow: 0px 0px 50px white,
+                0px 0px 20px black;
+    animation: h2-animation 1s infinite;
+}
+
+@keyframes h2-animation {
+    from {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+input {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+    font-size: x-large;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    transition: 0.24s;
+}
+
+.paragraph {
+    font-size: x-large;
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+}
+
+#Enter {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    font-size: xx-large;
+    position: relative;
+    top: 10px;
+}
+
+#Enter:hover {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+}
+
+#Enter:active {
+    background-color: white;
+    color: black;
+}
+
+#work {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+#goa-img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
+    animation: goa-animation 1s;
+}
+
+@keyframes goa-animation {
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(1px);
+    }
+}
+
+#goa-img:hover {
+    background: black;
+}
+
+#goa-transparent-img {
+    width: 50;
+    animation: goa-animate 1s;
+}
+
+@keyframes goa-animate {
+    from {
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(-1px);
+    }
+}
+
+#messege {
+    text-shadow: 0px 0px 20px,
+                0px 0px 20px black
+}
+
+#btn {
+    position: relative;
+    bottom: 200px;
+    width: 100px;
+    height: 60px;
+    background-color: green;
+    border: 2px solid green;
+    box-shadow: 0px 0px 20px ;
+    opacity: 0;
+    animation: goa-animation 1s;
+}
+
+#btn:hover {
+    opacity: 100;
+    color: white;
+}
+
+#btn:active {
+    background-color: white;
+    color: green;
+}
+
+#contact {
+    background-color: brown;
+    padding: 10px 0;
+    width: 1300px;
+    height: 750px;
+    color: white;
+}
+
+#child {
+    background-color: rgb(32, 35, 42);
+    width: 1200px;
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 10px;
+    left: 50px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    animation: form-animate 1s;
+}
+
+@keyframes form-animate {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(normal);
+    }
+}
+
+#contact-h1 {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+}
+
+#contact-h2 {
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+    position: relative;
+    right: 93px;
+}
+
+#span {
+    color: red;
+    text-shadow: 0px 0px 20px red,
+                0px 0px 20px black;
+}
+
+form {
+    position: relative;
+    right: 100px;
+}
+
+#work-h1 {
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black
+}
+
+.anchor {
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1-about {
+    position: relative;
+    bottom: 200px;
+    left: 480px;
+}
+
+#information {
+    position: relative;
+    right: 100px;
+    animation: about-animate 1s;
+}
+
+#contact-img {
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.288);
+}
+
+.clear-btn {
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    width: 30px;
+    border: none;
+    position: relative;
+    left: 110px;
+    bottom: 50px;
+    box-shadow: none;
+}
+
+.clear-btn:hover {
+    background-color: gray;
+    color: black;
+}
+
+.clear-btn:active {
+    background-color: red;
+    color: white;
+}
+
+@keyframes about-animate {
+    from {
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(-1px);
+    }
+}
+
+.message {
+    height: 100px;
+}
+
+#my-img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+    animation: my-animate 1s infinite;
+}
+
+#my-img::after {
+    background: linear-gradient(to bottom right, rgb(27, 240, 255), purple);
+    width: 300px;
+    height: 300px;
+}
+
+#date {
+    position: relative;
+    right: 50px;
+    top: 5px;
+}
+
+header {
+    height: 390px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes my-animate {
+    from {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+#nav-button {
+    position: relative;
+    bottom: 200px;
+}
+
+#button2 {
+    background-color: white;
+    color: blue;
+    border: 2px solid white;
+    transform: translateY(-5px);
+    height: 90px;
+    width: 200px;
+    font-size: xx-large;
+    position: relative;
+    bottom: 380px;
+    left: 30px;
+}
+
+#button2:hover {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+}
+
+#button2:active {
+    background-color: white;
+    color: blue;
+}
+
+#heading {
+    opacity: 100;
+    position: fixed;;
+    transform: translateX(-50px) translateY(-10px);
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+    width: 1500px;
+    height: 100px;
+    z-index: 10;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -15px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -15px;
+    content: "✖";
+}
+
+#a {
+    opacity: 100;
+}
+
+#heading2 {
+    position: relative;
+    top: 100px;
+}
+
+#clear-button {
+    background: red;
+    position: relative;
+    top: 20px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid red;
+    font-size: xx-large;
+}
+
+#clear-button:hover {
+    background-color: transparent;
+    color: red;
+    text-shadow: 0px 0px 20px red,
+                0px 0px 20px black;
+}
+
+#heading3 {
+    position: relative;
+    bottom: 200px;
+}
+
+label {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    display: block;
+    background-color: gray;
+    border-radius: 200px;
+    box-shadow: inset 0px 15px 20px rgba(0, 0, 0, 0.034),
+                inset 0px 0px 15px 20px rgba(0, 0, 0, 0.24),
+                0px 0px 20px rgba(0, 0, 0, 0.377);
+    cursor: pointer;
+}
+
+label::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(180deg, orange, orangered);
+    border-radius: 180px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.267);
+    transition: 0.24s;
+}
+
+#darkmode-toggle {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.24s;
+}
+
+#darkmode-toggle:checked + label {
+    box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.11),
+                0px 0px 20px rgba(0, 0, 0, 0.192);
+    background-color: black;
+    transition: 0.24s;
+}
+
+#darkmode-toggle:checked + label::after {
+    left: 240px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.164);
+    background: linear-gradient(180deg, rgb(100, 100, 100), rgb(29, 29, 29));
+    transition: 0.24s;
+}
+
+#darkmode-toggle:active::after {
+    width: 50px;
+}
+
+#heading1 {
+    position: relative;
+    right: 245px;
+    top: 20px;
+    text-shadow: 0px 0px 20px white,
+                0px 0px 20px black;
+    animation: heading-animate 1s;
+}
+
+@keyframes heading-animate {
+    from {
+        transform: translateY(-60px);
+    }
+
+    to {
+        transform: translateY(1px);
+    }
+}
+
+@media (max-width: 500px) {
+    #heading1 {
+        position: relative;
+        top: 40px;
+        right: 90px;
+    }
+}
+
+#texts {
+    position: relative;
+    bottom: 145px;
+    left: 5px;
+}
+
+.a-anchor {
+    opacity: 100;
+    color: black;
+    position: relative;
+    top: 10px;
+    font-size: x-large;
+    animation: anchor-animate 1s;
+}
+
+.a-anchor:hover {
+    color: brown;
+}
+
+@keyframes anchor-animate {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(normal);
+    }
+}
+
+#pages {
+    background-color: white;
+    height: 50px;
+    opacity: 100;
+    position: relative;
+    bottom: 20px;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accounts {
+    position: relative;
+    bottom: 15px;
+    animation: footer-animate 1s;
+}
+
+@keyframes footer-animate {
+    from {
+        transform: translateY(600px);
+    }
+
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+#information {
+    position: relative;
+    top: 90px;
+}
+
+#my-second-img {
+    position: relative;
+    left: 250px;
+    bottom: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    animation: second-img-animate 1s infinite;
+}
+
+#my-second-heading-img {
+    position: relative;
+    right: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    animation: second-img-animate 1s infinite;
+}
+
+@keyframes second-img-animate {
+    from {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}

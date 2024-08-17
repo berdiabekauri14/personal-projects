@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berdia portfoillo</title>
+
+    <link rel="website icon" type="png"
+    href="./imgs/portfolio icon berdia bekauri.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="parent">
+    <div class="loader"></div>
+    <header id="home">
+        <div id="heading">
+            <h1 id="heading1">DARK MODE</h1>
+            <div id="toggle-container">
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle" id="toggle" onclick="darkMode()"></label>
+            </div>
+            <br>
+            <div id="texts">
+                <h1 id="h1"><u>Berdia Bekauri</u></h1>
+                <br>
+                <nav>
+                    <a href="#about" class="anchor">About</a>
+                    <a href="#contact" class="anchor">Contact</a>
+                    <a href="#work" class="anchor">Work</a>
+                </nav>
+            </div>
+        </div>
+        <br>
+        <div id="heading2">
+            <h2 id="h2">PROGRAMMER, WEB DEVELOPER, DESIGNER AND EDITOR</h2>
+            <br>
+            <img src="./imgs/DSC06774.JPG" alt="my second heading image" width="300" id="my-second-heading-img">
+            <br>
+            <img src="./imgs/my photo.png" alt="me" width="300" id="my-img">
+            <br>
+            <div id="nav-button">
+        </div>
+        <br>
+        <div id="heading3"></div>
+            <center><a href="#about" id="a"><button id="button2">See More</button></a></center>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div id="about">
+            <h1 id="h1-about">About me</h1>
+            <center><img src="./imgs/me.png" alt="my photo" width="400" id="img"></center>
+            <br>
+            <div id="information">
+                <p>My name is berdia bekauri</p>
+                <p>I Am a programmer, web developer, designer and editor</p>
+                <p>I Am from georgia</p>
+                <p>I study in goal oriented academy</p>
+                <p>These are my programming langueges</p>
+                <ol>
+                    <li>Python</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                </ol>
+                <br>
+                <p>These are the country langueges i can speak</p>
+                <ul>
+                    <li>Georgian</li>
+                    <li>Russian</li>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Italian</li>
+                </ul>
+                <img src="./imgs/DSC07584.JPG" alt="my second image" width="300" id="my-second-img">
+            </div>
+        </div>
+        <br>
+        <div id="work">
+            <h1 id="work-h1">Work</h1>
+            <br>
+            <img src="./imgs/goa.jpg" alt="goa" width="500" id="goa-img">
+            <br>
+            <a href="https://www.facebook.com/nika11keshelava">
+                <button id="btn">Visit goal oriented academy on facebook</button>
+            </a>
+        </div>
+        <br>
+        <div id="contact">
+            <div id="child">
+                <img src="./imgs/contactus.jpg" alt="contact" width="600" height="700" id="contact-img">
+                <h1 id="contact-h1">Contact me</h1>
+                <h2 id="contact-h2">Got some problems to solve?</h2>
+                <center>
+                    <form action="index.html" id="form">
+                        <p class="paragraph">Name</p>
+                        <input type="text" name="name" placeholder="Enter your name" id="name">
+                        <p class="paragraph">Email</p>
+                        <input type="email" name="email" placeholder="Enter your email" id="email">
+                        <p class="paragraph">Password</p>
+                        <input type="password" name="password" placeholder="Enter your password" id="password">
+                        <div id="messege">
+                            <p>Password must contain these followings: </p>
+                            <p id="lower-letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="upper-letter" class="invalid">A <b>capital</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></li>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></li>
+                        </div>
+                        <br>
+                        <p class="paragraph">Message</p>
+                        <input type="text" name="message" class="message" placeholder="Enter your message">
+                        <br>
+                        <button id="Enter" type="button">Enter</button>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div id="pages">
+            <a href="#about" class="a-anchor">ABOUT</a>
+            <a href="#contact" class="a-anchor">CONTACT</a>
+            <a href="#home" class="a-anchor" id="home-anchor">HOME</a>
+            <a href="#work" class="a-anchor">WORK</a>
+            <a href="https://github.com/berdiabekauri14/portfoilo.git" class="a-anchor">SOURCE CODE</a>
+        </div>
+        <br>
+        <div id="accounts">
+            <center>
+                <a href="https://www.facebook.com/berdia.bekauri.54" class="a"><img src="./imgs/facebook.png" alt="facebook" width="70" class="icon" id="facebook"></a>
+                <a href="https://github.com/berdiabekauri14" class="a"><img src="./imgs/github.png" alt="github" width="70" id="github" class="icon"></a>
+                <a href="https://www.youtube.com/@Ectro.aeptiktok" class="a"><img src="./imgs/youtube.png" alt="youtube" width="70" class="icon" id="youtube"></a>
+                <a href="discord.html"><img src="./imgs/discord logo.png" alt="discord" width="70" class="icon"></a>
+            </center>
+        </div>
+    </footer>
+
+    <div id="background"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
