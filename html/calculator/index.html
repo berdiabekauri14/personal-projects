@@ -12,13 +12,14 @@
 </head>
 <body>
     <div class="parent" id="calculator">
-        <center><input id="display" readonly></center>
+        <center><input id="display" readonly placeholder="0"></center>
         <br>
         <div class="child" id="keys">
             <button onclick="appendToDisplay('+')" class="operator">+</button>
             <button onclick="appendToDisplay('/')" class="operator">/</button>
             <button onclick="appendToDisplay('*')" class="operator">*</button>
             <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('%')" class="second-operator">%</button>
             <button onclick="calculate()" class="operator">=</button>
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
@@ -31,7 +32,7 @@
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="clearDisplay()">C</button>
+            <button onclick="clearDisplay()" class="second-operator" id="clear">AC</button>
         </div>
     </div>
 

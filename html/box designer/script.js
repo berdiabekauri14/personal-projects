@@ -1,5 +1,5 @@
-let box = document.querySelector("div");
-let input = document.querySelector("input");
+let box = document.getElementById('box');
+let input = document.getElementById('input')
 
 input.addEventListener("input", () => {
     box.style.borderRadius = input.value;

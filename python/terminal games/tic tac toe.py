@@ -122,13 +122,13 @@ class Game:
                 if j == 2:
                     return f"{player.name} Wins"
 
-        for i in (0, 4, 8):
+        for i in range(0, 4, 8):
             if self.board[i] != letter:
                 break
             if i == 8:
                 return f"{player.name} Wins"
 
-        for i in (2, 4, 6):
+        for i in range(2, 4, 6):
             if self.board[i] != letter:
                 break
             if i == 6:
@@ -142,6 +142,6 @@ class Game:
         else:
             self.active_player = self.p1
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     game = Game()
     game.start()

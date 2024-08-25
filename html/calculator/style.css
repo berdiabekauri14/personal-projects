@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: bold;
-    font-size: large;
+    font-size: xx-large;
 }
 
 body {
@@ -11,13 +11,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(199, 195, 255);
+    background-color: rgb(225, 223, 255);
 }
 
 #calculator {
     background-color: rgb(29, 29, 29);
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.733);
 }
@@ -25,11 +25,23 @@ body {
 button {
     background-color: rgb(68, 68, 68);
     color: white;
-    width: 50px;
+    width: 70px;
     height: 50px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
+}
+
+#keys {
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    right: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 1px;
 }
 
 button:hover {
@@ -42,24 +54,41 @@ button:active {
 }
 
 .operator {
-    background-color: orangered;
+    background-color: orange;
 }
 
 .operator:hover {
-    background-color: rgb(250, 107, 55);
+    background-color: rgb(255, 220, 156);
 }
 
 .operator:active {
     background-color: rgb(255, 160, 126);
 }
 
+.second-operator {
+    background-color: gray;
+    color: black;
+}
+
+.second-operator:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.second-operator:active {
+    background-color: orange;
+    color: white;
+}
+
 #display {
-    width: 300px;
-    height: 80px;
+    width: 400px;
+    height: 90px;
     background-color: rgb(65, 65, 65);
     border: none;
     border-radius: 10px 10px 0px 0px;
     color: white;
     font-size: xx-large;
-    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: right;
 }
+

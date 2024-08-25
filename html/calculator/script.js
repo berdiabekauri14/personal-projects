@@ -4,8 +4,11 @@ function appendToDisplay(input){
     display.value += input;
 }
 
+const clear = document.getElementById("clear")
+
 function clearDisplay(){
     display.value = "";
+    clear.textContent = "C";
 }
 
 function calculate(){
